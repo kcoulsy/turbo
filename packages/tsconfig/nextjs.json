@@ -1,7 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Next.js",
-  "extends": "./base.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "styles/global.css"],
-  "exclude": ["node_modules", ".next", ".turbo"]
+  "extends": "./base.json"
 }
