@@ -10,6 +10,7 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:import/typescript',
     'prettier',
+    'plugin:react/jsx-runtime',
   ],
   plugins: ['@typescript-eslint', 'import'],
   settings: {
@@ -34,29 +35,29 @@ module.exports = {
         namedComponents: 'arrow-function',
       },
     ],
-
+    'react/react-in-jsx-scope': 0,
     // next
     '@next/next/no-html-link-for-pages': 'off',
-    "import/order": [
-      "error",
+    'import/order': [
+      'error',
       {
-        "pathGroups": [
+        pathGroups: [
           {
-            "pattern": "@**",
-            "group": "internal"
-          }
+            pattern: '@**',
+            group: 'internal',
+          },
         ],
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          ["parent", "sibling"],
-          "index",
-          "object",
-          "type"
-        ]
-      }
-    ]
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          ['parent', 'sibling'],
+          'index',
+          'object',
+          'type',
+        ],
+      },
+    ],
   },
   overrides: [
     {
@@ -85,4 +86,4 @@ module.exports = {
     'dist',
     '.turbo',
   ],
-}
+};
