@@ -1,0 +1,11 @@
+{
+  "extends": "tsconfig/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}

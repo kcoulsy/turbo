@@ -1,0 +1,27 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.tsx",
+  "types": "./src/index.tsx",
+  "scripts": {
+    "lint": "eslint src/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "17.0.37",
+    "@types/react-dom": "17.0.11",
+    "autoprefixer": "^10.4.0",
+    "config": "workspace:*",
+    "eslint": "^8.16.0",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.7",
+    "tsconfig": "workspace:*",
+    "typescript": "4.5.4"
+  },
+  "dependencies": {
+    "react": "18.1.0"
+  }
+}

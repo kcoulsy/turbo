@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "files": [
-    "eslint-next.js",
-    "eslint-server.js"
+    "eslint-react.js",
+    "eslint-server.js",
+    "tailwind.config.js",
+    "postcss.config.js"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
