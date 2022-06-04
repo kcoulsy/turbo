@@ -6,23 +6,42 @@ import { Button } from 'ui';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const setup = {
-  title: 'Example/Button',
+  title: 'Components/Button',
   component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  argTypes: {},
 } as ComponentMeta<typeof Button>;
 
 export default setup;
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Button> = (args) => <Button />;
+const Template: ComponentStory<typeof Button> = (args) => (
+  <div>
+    <Button {...args} />
+  </div>
+);
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
-  primary: true,
-  label: 'Button',
+  variant: 'primary',
+  disabled: false,
+  label: 'Primary',
+};
+
+export const Secondary = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Secondary.args = {
+  variant: 'secondary',
+  disabled: false,
+  label: 'Secondary',
+};
+
+export const Disabled = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Disabled.args = {
+  variant: 'primary',
+  disabled: true,
+  label: 'Disabled',
 };
 
 // export const Secondary = Template.bind({});

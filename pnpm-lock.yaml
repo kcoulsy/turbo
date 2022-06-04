@@ -175,6 +175,7 @@ importers:
       '@types/react': 17.0.37
       '@types/react-dom': 17.0.11
       autoprefixer: ^10.4.0
+      clsx: ^1.1.1
       config: workspace:*
       eslint: ^8.16.0
       postcss: ^8.4.5
@@ -183,6 +184,7 @@ importers:
       tsconfig: workspace:*
       typescript: 4.5.4
     dependencies:
+      clsx: 1.1.1
       react: 18.1.0
     devDependencies:
       '@types/react': 17.0.37
@@ -5469,6 +5471,11 @@ packages:
     resolution: {integrity: sha512-3avwM37fSK5oP6M5rQ9CNe99lwxhXDOeSWVPAOYF6OazUTgZCMb0yWlJpmdD74REy1gkEaFiub2ULv4fq9GUhA==}
     engines: {node: '>=6'}
     dev: true
+
+  /clsx/1.1.1:
+    resolution: {integrity: sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA==}
+    engines: {node: '>=6'}
+    dev: false
 
   /collapse-white-space/1.0.6:
     resolution: {integrity: sha512-jEovNnrhMuqyCcjfEJA56v0Xq8SkIoPKDyaHahwo3POf4qcSXqMYuwNcOTzp74vTsR9Tn08z4MxWqAhcekogkQ==}
