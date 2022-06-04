@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 
-interface ButtonProps {
+export interface ButtonProps {
   variant: 'primary' | 'secondary' | 'tertiary' | 'link';
   label: string;
   disabled?: boolean;
