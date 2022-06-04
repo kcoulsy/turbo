@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig/nextjs.json",
+  "extends": "config/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
     "target": "es5",
