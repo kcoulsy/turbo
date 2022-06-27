@@ -38,6 +38,7 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'react/jsx-props-no-spreading': 0,
     'react/require-default-props': 0,
+    'react/prop-types': 0,
     // next
     '@next/next/no-html-link-for-pages': 'off',
     'import/order': [

@@ -11,6 +11,7 @@
     "noEmit": true,
     "jsx": "preserve"
   },
-  "include": ["src"],
+  "include": ["src/**/*.{ts,tsx}"],
+  "exclude": ["**/*.mdx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -14,14 +14,16 @@ export const Button: React.FC<ButtonProps> = ({
   <button
     type="button"
     className={clsx(
-      'text-xl h-10 w-fit px-4 align-middle leading-tight',
+      'text-md h-9 w-fit px-4 align-middle leading-tight',
       'transition-colors duration-100',
       {
-        'bg-primary-base hover:bg-primary-800 text-white':
+        'bg-primary-base hover:bg-primary-darker text-white':
           variant === 'primary' && !disabled,
-        'bg-secondary-base hover:bg-secondary-800 text-white':
+        'bg-primary-lighter  text-white': variant === 'primary' && disabled,
+        'bg-secondary-base hover:bg-secondary-darker text-white':
           variant === 'secondary' && !disabled,
-        'bg-gray-600 text-white cursor-default': disabled,
+        'bg-secondary-lighter  text-white': variant === 'secondary' && disabled,
+        // 'bg-gray-600 text-white cursor-default': disabled,
       },
     )}
     {...(disabled && { disabled })}
