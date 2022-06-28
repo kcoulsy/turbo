@@ -3,10 +3,14 @@
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "dist",
-      "target": "es6",
-      "noEmit": true,
-      "module": "commonjs",
-      "sourceMap": true
+    "target": "es6",
+    "noEmit": true,
+    "module": "commonjs",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"]
+    }
   },
   "include": ["src/"],
   "exclude": ["node_modules", ".turbo", "coverage", "dist", "src/**/*.test.ts"]
